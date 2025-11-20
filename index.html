@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,6 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jalwa Game</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Inline style to make site fonts bold and use a red/black two-tone effect -->
+  <style>
+    /* Make all text bold */
+    body, h1, h2, h3, h4, h5, h6, p, button, .info {
+      font-weight: 700 !important;
+      color: #e60000; /* primary red */
+      /* small black outline effect to give a red/black look */
+      text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+    }
+
+    /* Ensure buttons keep readable background and bold text */
+    button {
+      background:#111;
+      color:#e60000;
+      border:2px solid #e60000;
+      padding:8px 12px;
+      border-radius:6px;
+      cursor:pointer;
+    }
+
+    /* Header tweaks so logo area and register button stand out */
+    .header { display:flex; gap:12px; align-items:center; justify-content:space-between; padding:12px; background:#000; }
+    .header .logo { max-height:64px; }
+
+    /* Preserve readability for long paragraphs */
+    .offer-list p { color:#fff; text-shadow:none; font-weight:700; }
+  </style>
 </head>
 <body>
 
@@ -76,3 +104,5 @@
 
 </body>
 </html>
+
+
