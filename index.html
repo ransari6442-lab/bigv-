@@ -1,99 +1,155 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jalwa Game</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Inline style to make site fonts bold and use a red/black two-tone effect -->
-  <style>
-    /* Make all text bold */
-    body, h1, h2, h3, h4, h5, h6, p, button, .info {
-      font-weight: 700 !important;
-      color: #e60000; /* primary red */
-      /* small black outline effect to give a red/black look */
-      text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jalwa Game Nisha</title>
 
-    /* Ensure buttons keep readable background and bold text */
-    button {
-      background:#111;
-      color:#e60000;
-      border:2px solid #e60000;
-      padding:8px 12px;
-      border-radius:6px;
-      cursor:pointer;
-    }
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #070707;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
 
-    /* Header tweaks so logo area and register button stand out */
-    .header { display:flex; gap:12px; align-items:center; justify-content:space-between; padding:12px; background:#000; }
-    .header .logo { max-height:64px; }
+/* Wrapper */
+.wrapper {
+    padding: 16px;
+}
 
-    /* Preserve readability for long paragraphs */
-    .offer-list p { color:#fff; text-shadow:none; font-weight:700; }
-  </style>
+/* HERO BANNER */
+.hero-img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+/* Card */
+.card {
+    background: rgba(22,22,22,0.95);
+    padding: 28px;
+    border-radius: 28px;
+    border: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 40px rgba(0,0,0,0.55);
+}
+
+/* Titles */
+.top-text {
+    color: #bdbdbd;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.highlight {
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffdd00;
+    margin: 20px 0 18px 0;
+}
+
+/* Points */
+.list-item {
+    margin: 10px 0;
+    font-size: 17px;
+    display: flex;
+    gap: 8px;
+}
+
+/* Button */
+.btn-box {
+    margin-top: 28px;
+}
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg,#0070ff,#00c4ff);
+    border-radius: 40px;
+    border: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0,140,255,0.5);
+}
+
+/* Warning */
+.warning {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #ffdd55;
+}
+
+/* TIMER */
+.timer {
+    margin-top: 25px;
+    background: red;
+    padding: 14px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+}
+</style>
+
 </head>
 <body>
 
-  <!-- HEADER SECTION -->
-  <header class="header">
+<div class="wrapper">
 
-    <button class="register-btn">REGISTER NOW</button>
-  </header>
- <a href="https://imgbb.com/"><img src="https://i.ibb.co/PzMHqY4T/download-4.jpg" alt="download-4" border="0"></a>
- 
-  <!-- RECHARGE & OFFERS SECTION -->
-  <section class="offer-section">
-    <img src="images/recharge-banner.png" class="banner" />
-    <div class="offer-list">
-      <p>1. Daily Free Deposit</p>
-      <p>2. Daily ₹200 Gifted</p>
-      <p>3. Daily Super Short Game</p>
+    <!-- HERO IMAGE -->
+    <img src="jalwa-banner.jpg" class="hero-img" alt="Banner">
+
+    <div class="card">
+
+        <div class="top-text">100% NUMBER SURE SHOT</div>
+
+        <div class="title">
+            NUMBER SURE SHOT PREDICTION BY <br>
+            BHARAT CLUB SUMU 💰
+        </div>
+
+        <div class="highlight">Join Free VIP Channel</div>
+
+        <div class="list">
+            <div class="list-item">✅ 100% Sure Shots</div>
+            <div class="list-item">✅ Complete Loss Recovery 100%</div>
+            <div class="list-item">✅ Free Sure Shots + Gift 🎁</div>
+            <div class="list-item">👉 Join now & get Bonus Upto ₹1000</div>
+            <div class="list-item">✅ Earn 5k - 10k Daily</div>
+        </div>
+
+        <div class="btn-box">
+            <button class="btn">Join Telegram Now ➤</button>
+        </div>
+
+        <div class="warning">
+            ⚠ After clicking, OPEN TELEGRAM & tap "JOIN" inside the app!
+        </div>
+
     </div>
-  </section>
 
-  <!-- ACTION BUTTONS -->
-  <section class="action-buttons">
-    <button>Register</button>
-    <button>₹200 Gift</button>
-    <button>SureShot Prediction</button>
-  </section>
-
-  <!-- REFERRAL BONUS -->
-  <section class="referral-section">
-    <img src="images/referral.png" class="full" />
-  </section>
-
-  <!-- ADS FUNDS + AGENT SYSTEM -->
-  <section class="ads-agent-section">
-    <img src="images/adsfunds.png" class="half" />
-    <img src="images/agent-system.png" class="half" />
-  </section>
-
-  <!-- BECOME AGENT -->
-  <section class="become-agent">
-    <img src="images/become-agent.png" />
-  </section>
-
-  <!-- TOP SITES -->
-  <section class="top-sites">
-    <h2>Top Sites</h2>
-    <div class="site-row">
-      <img src="images/jalwa-icon.png" />
-      <div class="info">Signup: 250 | Free: 25</div>
-      <button>Register</button>
+    <div class="timer">
+        ⏳ Limited Time: 23s Left!
     </div>
-    
-    <div class="site-row">
-      <img src="images/7trump.png" />
-      <div class="info">Signup: 32 | Free: 3</div>
-      <button>Register</button>
-    </div>
-  </section>
+
+</div>
 
 </body>
 </html>
+
+
 
 
 
